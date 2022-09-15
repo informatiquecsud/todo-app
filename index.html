@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Application Todo</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Modifié par Johan Jobin, original de Jun Huang" />
+    <meta
+      name="description"
+      content="Une application liste de tâches en pur JavaScript pour se familiariser avec le langage."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <nav class="navbar">
+        <ul class="nav">
+          <li class="nav__item">Todo app</li>
+        </ul>
+      </nav>
+      <form class="todo-form">
+        <div class="input-field">
+          <input
+            type="text"
+            id="input--add"
+            class="input"
+            placeholder="exemple: étendre l'application todo avec la possibilité d'indiquer si une tâche est réalisée ou pas"
+          />
+          <label for="input--add"></label>
+        </div>
+        <input type="submit" class="button button--add" value="Ajouter" />
+      </form>
+      <ul class="todo-collection"></ul>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
